@@ -1,17 +1,13 @@
-"use strict";
 const express = require("express");
 const bodyParser = require("body-parser");
 const fccTesting = require("./freeCodeCamp/fcctesting.js");
 const bcrypt = require("bcrypt");
+("use strict");
 const app = express();
 fccTesting(app);
 const saltRounds = 12;
 const myPlaintextPassword = "sUperpassw0rd!";
 const someOtherPlaintextPassword = "pass123";
-
-app.get("/", (req, res) => {
-  res.send("Hello freeCodeCamp bcrypt");
-});
 
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
