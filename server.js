@@ -10,7 +10,7 @@ const myPlaintextPassword = "sUperpassw0rd!";
 const someOtherPlaintextPassword = "pass123";
 
 app.get("/", (req, res) => {
-  res.send("freeCodeCamp bcrypt");
+  res.send("Hello freeCodeCamp bcrypt");
 });
 
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
